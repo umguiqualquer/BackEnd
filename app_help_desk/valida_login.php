@@ -4,8 +4,11 @@ $usuario_autenticado = false;
 //cria uma lista com os valores de email se senha que serão verificados no futuro
 $usuario_cadastrado = [
     ['email' => 'admin@senai.br',
-    'senha' => 12345
-    ]
+    'senha' => 12345],
+    ['email' => 'aluno@senai.br',
+    'senha' => 'abcde'],
+    ['email' => 'suporte@senai.br',
+    'senha' => '1a2b3c']
 ];
 //cria uma outra forma de chamar a arrya como se fosse uma abreviação
 foreach($usuario_cadastrado as $user){
