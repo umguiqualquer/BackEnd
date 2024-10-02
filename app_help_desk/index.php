@@ -31,7 +31,7 @@
                   <input name="email" class="form-control" placeholder="E-mail" required>
                 </div>
                 <div class="form-group">
-                  <input name="senha" class="form-control" placeholder="Senha" required>
+                  <input type = "password" name="senha" class="form-control" placeholder="Senha" required>
                 </div>
                 <button class="btn btn-lg btn-info btn-block" type="submit">Entrar</button>
               </form>
