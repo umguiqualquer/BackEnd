@@ -1,6 +1,10 @@
 <?php
 
+session_start();
+
+//estou usando uma variavel para começar o codigo   
 $usuario_autenticado = false;
+
 //cria uma lista com os valores de email se senha que serão verificados no futuro
 $usuario_cadastrado = [
     ['email' => 'admin@senai.br',
@@ -18,10 +22,13 @@ foreach($usuario_cadastrado as $user){
 }
 
 //verifica se o usuario_autenticado esta sendo true, caso o contrario a mensagem de falha sera exibida
-if ($usuario_autenticado == true){
+if ($usuario_autenticado){
+    $_SESSION['autenticado'] ='SIM';
     echo "Usuário autenticado com sucesso";
+    header('Location: painel.php');
 }else{
     //echo "Usuário ou senha incorreto";
+    $_SESSION['autenticado'] ='NÃO';
     header ('Location: index.php?senha=erro');
 }
 ?>

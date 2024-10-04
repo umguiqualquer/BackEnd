@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <html>
   <head>
     <meta charset="utf-8" />
@@ -33,6 +37,22 @@
                 <div class="form-group">
                   <input type = "password" name="senha" class="form-control" placeholder="Senha" required>
                 </div>
+                <?php
+                if(isset($_GET['login']) && $_GET['login'] =='erro'){
+                  ?>
+                  <div class="text-danger">
+                    Usuário ou senha invalido(s)
+                </div>
+
+                <?php }?>
+                <?php
+                if(isset($_GET['login']) && $_GET['login'] =='erro2'){
+                ?>
+                <div class="text-danger">
+                  Faça o login primeiro !!!
+                </div>
+
+                <?php } ?>
                 <button class="btn btn-lg btn-info btn-block" type="submit">Entrar</button>
               </form>
             </div>
