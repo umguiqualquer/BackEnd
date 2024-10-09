@@ -1,6 +1,7 @@
 <?php
 
-session_start();
+
+session_start ();
 
 //estou usando uma variavel para começar o codigo   
 $usuario_autenticado = false;
