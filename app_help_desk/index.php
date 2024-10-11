@@ -8,6 +8,8 @@ session_start();
     <title>App Help Desk</title>
     <link rel="stylesheet" type="text/css" href="bootstrap.css">
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="estilizacao.css">
+
 
     </style>
   </head>

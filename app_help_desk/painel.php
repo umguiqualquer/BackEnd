@@ -9,6 +9,8 @@ require_once("login.php");
     <title>App Help Desk</title>
     <link rel="stylesheet" type="text/css" href="bootstrap.css">
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="estilizacao.css">
+
     
     </style>
   </head>
@@ -35,12 +37,12 @@ require_once("login.php");
               <div class="row">
                 <div class="col-6 d-flex justify-content-center">
                 <a href="abrir_chamado.php">
-                  <img src="formulario_abrir_chamado.png" width="70" height="70">
+                  <img src="formulario_abrir_chamado.png" width="140" height="70">
                 </a>
                 </div>
                 <div class="col-6 d-flex justify-content-center">
                   <a href="consultar_chamado.php">
-                  <img src="formulario_consultar_chamado.png" width="70" height="70">
+                  <img src="formulario_consultar_chamado.png" width="100" height="100">
                   </a>
                 </div>
               </div>
