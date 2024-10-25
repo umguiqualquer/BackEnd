@@ -1,0 +1,54 @@
+<?php
+
+require_once("login.php");
+?>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>App Help Desk</title>
+    <link rel="stylesheet" type="text/css" href="bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="estilizacao.css">
+
+    
+    </style>
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-dark bg-dark">
+      <a class="navbar-brand" href="entrar.php">
+        <img src="logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
+        App Help Desk
+      </a>
+      <button onclick="location.href='logoff.php'" class="sair" type="button">Sair</button>
+    </nav>
+
+    <div class="container">    
+      <div class="row">
+
+        <div class="card-home">
+          <div class="card">
+            <div class="card-header">
+              Menu
+            </div>
+            <div class="card-body">
+              <div class="row">
+                <div class="col-6 d-flex justify-content-center">
+                <a href="abrir_chamado.php">
+                  <img src="formulario_abrir_chamado.png" width="140" height="70">
+                </a>
+                </div>
+                <div class="col-6 d-flex justify-content-center">
+                  <a href="consultar_chamado.php">
+                  <img src="formulario_consultar_chamado.png" width="100" height="100">
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+  </body>
+</html>
