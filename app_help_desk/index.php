@@ -1,65 +1,47 @@
-<?php
-session_start();
-?>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avaliação</title>
+    <link rel="stylesheet" href="estilo.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+        </style>
+</head>
+<body>
 
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <title>App Help Desk</title>
-    <link rel="stylesheet" type="text/css" href="bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="styles.css">
-    <link rel="stylesheet" type="text/css" href="estilizacao.css">
+<header>
+<center>
+    <h1 id="titulo" >Bem-Vindo ao site de Avaliação</h1>
+    <img id="imagem" src="Imagens/sonic2.png" alt="" height="570" width="570">
+</center>
+</header>
 
+<center>
+<button onclick="location.href='acesso_login.php'" id="login" type="button" >Login</button>
+</center>
 
-    </style>
-  </head>
+<div id="Fale">
+    <form action="">
+        <h3>Nome:</h3>
+        <input type="text" id="nome" placeholder="Digite seu Nome aqui"><br><br>
+        <h3>E-mail:</h3>
+        <input type="email" id="email" placeholder="Digite seu E-mail aqui"><br><br>
+        <h3>Mensagem:</h3>
+        <textarea id="mensagem" name="Mensagem" placeholder="Digite sua Mensagem aqui" rows="10" cols="35"></textarea>
 
-  <body>
+        <input id="Enviar" type="submit" value="Enviar">
+    </form>
+</div>
 
-    <nav class="navbar navbar-dark bg-dark">
-      <a class="navbar-brand" href="#">
-        <img src="logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
-        App Help Desk
-      </a>
-    </nav>
+<div id="footer">
+    <center>
+    <h4>SEGA INCORPORATION @SEGA</h4>
+    </center>
+</div>
 
-    <div class="container">    
-      <div class="row">
+<div id="gif"><img src="Imagens/sonicestressado.gif" alt="" width="80" height="80"></div>
 
-        <div class="card-login">
-          <div class="card">
-            <div class="card-header">
-              Login
-            </div>
-            <div class="card-body">
-              <form action="valida_login.php" method="post">
-                <div class="form-group">
-                  <input name="email" class="form-control" placeholder="E-mail" required>
-                </div>
-                <div class="form-group">
-                  <input type = "password" name="senha" class="form-control" placeholder="Senha" required>
-                </div>
-                <?php
-                if(isset($_GET['login']) && $_GET['login'] =='erro'){
-                  ?>
-                  <div class="text-danger">
-                    Usuário ou senha invalido(s)
-                </div>
-
-                <?php }?>
-                <?php
-                if(isset($_GET['login']) && $_GET['login'] =='erro2'){
-                ?>
-                <div class="text-danger">
-                  Faça o login primeiro !!!
-                </div>
-
-                <?php } ?>
-                <button class="btn btn-lg btn-info btn-block" type="submit">Entrar</button>
-              </form>
-            </div>
-          </div>
-        </div>
-    </div>
-  </body>
+</body>
 </html>
